@@ -1,0 +1,35 @@
+{
+  "name": "openzeppelin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "truffle": "truffle",
+    "truffle:script": "tsc -p ./tsconfig.script.json --outDir ./build/scripts && yarn truffle exec --network development",
+    "generate-types": "typechain --target=truffle-v5 'build/contracts/*.json'",
+    "postinstall": "truffle compile && yarn generate-types",
+    "migrate": "tsc -p ./tsconfig.migrate.json --outDir ./migrations && truffle migrate",
+    "typecheck": "tsc --noEmit",
+    "test": "ts-mocha --exit --recursive test/**/*.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.3.1",
+    "@openzeppelin/test-environment": "^0.1.9",
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "@typechain/truffle-v5": "^5.1.0",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1",
+    "truffle": "^5.4.8",
+    "ts-mocha": "^8.0.0",
+    "typechain": "^5.1.2",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@openzeppelin/test-helpers": "^0.5.13",
+    "@types/chai": "^4.2.21"
+  }
+}

@@ -1,0 +1,76 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "deployer",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "isAdministrator",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"openzeppelin/contracts/access-control/Auth.sol": "Auth"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"openzeppelin/contracts/access-control/Auth.sol": {
+			"keccak256": "0x2d37468f44546410c4c341e0a18ead322e6e35ed483c032f064fce73e3cf0189",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://616dca81c84d8228975d5b5ca3335f9c878691faa411bae5558319ee7b0c4f7f",
+				"dweb:/ipfs/QmYEngtp5pfuXuUDd44CxQp3Fr1UAvFeCY7M7hH9uqFgev"
+			]
+		}
+	},
+	"version": 1
+}
